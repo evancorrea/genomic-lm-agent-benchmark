@@ -1,12 +1,20 @@
 # Genomic-LM tool availability: Pi agent pilot
 
-**New:** [v2/](v2/README.md) expands to three biological sequence tasks, stronger GC/3-mer and GC/5-mer controls, one blind test submission per agent, an audited sequence-similarity screen, and a Seaborn comparison plot. The original one-task study below is retained unchanged as v1.
+**Start here:** [v2/](v2/README.md) is the newer three-task study. This page documents the original, simpler **v1** pilot.
 
-A reproducible first iteration of a **genomic language model as a tool for a Pi agent**. On a small public promoter-classification subset, five `openai/gpt-6-sol` (medium) runs had only a GC/3-mer baseline tool; five matched runs also had a tool backed by frozen **Nucleotide Transformer v2 50M** embeddings. Each run has **one user prompt**, an independent persistent Pi session, and a streamed JSON event trace.
+## The idea in plain language
 
-**Result on this single fixed subset:** the GLM-tool arm selected the embedding features in all five runs. Test AUROC was **0.916016 versus 0.886719** for the composition baseline (+0.029297); accuracy at a 0.5 threshold was **0.812500 versus 0.859375** (−0.046875). Both arms answered all seven machine-graded fields correctly in all five repetitions. This is a mixed result, **not evidence of general uplift across biology**. Five agent repetitions are not five independent biological evaluations. See [methodology and limitations](docs/methodology.md).
+Could a research assistant make better use of DNA data if it had access to a **genomic language model** (GLM)? We gave Pi a small dataset of human DNA sequences labeled as **promoter** or **not promoter**. Promoters are regions associated with starting gene transcription; predicting the label from sequence could help prioritize candidates, but it cannot establish activity in a particular cell.
+
+We compared an agent with only a basic DNA-composition analysis against the **same agent** with an additional tool backed by Nucleotide Transformer v2 50M. The tool provided previously computed model features and classifier results; Pi did **not** train the genomic model or write the analysis code itself. Its job was to choose an available analysis and explain the outcome.
+
+**What happened:** with the extra tool, the agent chose the genomic-model features. They ranked promoter examples better on this small test set, but made **three fewer correct yes/no predictions** at the fixed cutoff. That is a mixed outcome—not evidence that GLMs generally improve biological research. Five agent repetitions used the same data and are **not five independent biological tests**. The [v2 study](v2/README.md) adds more tasks, stronger conventional baselines, and a one-shot held-out test.
 
 ![Paired trial results](comparison.png)
+
+## Technical setup and exact results
+
+Five `openai/gpt-6-sol` (medium-thinking) runs had only a GC/3-mer baseline tool; five matched runs also had a tool backed by frozen **Nucleotide Transformer v2 50M** embeddings. Each run had one user prompt, a separate persistent Pi session, and a JSON event trace. On the same fixed subset, test AUROC was **0.916016 versus 0.886719** (+0.029297) for the genomic features versus composition; accuracy at threshold 0.5 was **0.812500 versus 0.859375** (−0.046875). Both arms reported all seven graded fields correctly in all five repetitions. See [methodology and limitations](docs/methodology.md).
 
 ## Repository map
 

@@ -1,10 +1,16 @@
 # v2 · Three-task genomic-model tool-availability benchmark
 
-This is a **separate, versioned extension** of the [initial one-task pilot](../README.md). One public classification dataset each for human non-TATA **promoters**, **enhancers**, and **open chromatin**. Each task has three one-prompt Pi runs with composition-only tools and three with Nucleotide Transformer v2 50M embeddings also available: **18 persistent sessions** in `runs/`.
+This is the newer, three-task extension of the [original promoter-only pilot](../README.md).
 
-An agent calls `describe_task`, validates every available feature family on a **training-only** split, chooses a feature/C/threshold using validation average precision and F1, and makes **one held-out test submission**. The agent receives no general shell, filesystem reader, or arbitrary Python runner. Its control cannot call the genomic-model feature family. Pi itself uses `openai/gpt-6-sol` with medium thinking in both arms.
+## The question, without the machinery
 
-## Final pilot outcome (one fixed 128-sequence test subset per task)
+Does giving a Pi research assistant access to a **genomic language model** help it choose a better way to analyze DNA sequences? We tested three separate yes/no questions: *does this sequence resemble a promoter*, *an enhancer*, or *an annotated open-chromatin region*? These are biologically useful candidate-prioritization tasks, but a sequence prediction alone cannot prove that a region is active in a particular tissue. Each dataset has its own negative examples; the three labels are **not** competing classes in one classifier.
+
+For each question, one Pi agent could choose between simple DNA-composition features (GC content and short sequence patterns). An otherwise identical agent also had access to features from **Nucleotide Transformer v2 50M**. Agents compared options on training-validation data, selected one, then received **one held-out test result**. The genomic-model tool was optional: having access did not force the agent to use it.
+
+**Bottom line:** the agents kept the conventional features for promoters and enhancers. Their test scores are **exactly equal between arms because they submitted exactly the same classifier**, not because genomic-model features happened to score identically. For open chromatin they selected the genomic features, with better precision–recall AUC and F1 on this small test subset, though slightly worse ROC AUC. This is a task-specific development result, **not a claim of broad GLM uplift**.
+
+## Results at a glance (one fixed test subset per task)
 
 | Task | Control choice | +GLM-tool choice | Control test AUPRC | +GLM-tool test AUPRC | Control F1 | +GLM-tool F1 |
 |---|---|---|---:|---:|---:|---:|
@@ -12,9 +18,15 @@ An agent calls `describe_task`, validates every available feature family on a **
 | Enhancer | GC + 3-mers | GC + 3-mers | 0.711 | 0.711 | 0.683 | 0.683 |
 | Open chromatin | GC + 3-mers | NT-v2 50M | 0.648 | **0.677** | 0.641 | **0.697** |
 
-The open-chromatin model's **ROC AUC decreased slightly** (0.663 to 0.660) despite the AUPRC/F1 gain. The agents correctly **declined** the genomic features for promoter and enhancer tasks on validation. All 18 submitted exactly one test pipeline, validated every available family, chose the validation-optimal configuration, and reported **9/9** machine-checked fields. These three repetitions per arm made the same decision on the **same fixed data**; they are NOT independent biological replicates.
+AUPRC summarizes how well a model ranks positive examples when precision and recall matter; F1 evaluates yes/no predictions at the chosen threshold. The open-chromatin model's **ROC AUC decreased slightly** (0.663 to 0.660), so even there the result is mixed. Three agent repetitions per arm made the same decision on the **same fixed data**: they are **not independent biological replicates**.
 
 ![v2 results](comparison_v2.png)
+
+## Technical setup and run outcomes
+
+This study uses separate public datasets for human non-TATA promoters, enhancers, and open chromatin, with 256 balanced training and 128 balanced test sequences per task. Each task had three one-prompt Pi runs with composition-only tools and three with the NT-v2 embedding tool also available: **18 persistent sessions** in `runs/`. The Pi model was `openai/gpt-6-sol` at medium thinking in both arms.
+
+Each agent called `describe_task` and validated every available feature family on a training-only split. It chose a feature family, logistic-regression regularization `C`, and decision threshold using validation AUPRC/F1, then made **one held-out test submission**. The agent had no general shell, filesystem reader, or arbitrary Python runner; the control could not call the genomic feature family. All 18 followed the protocol, chose the validation-optimal configuration, and reported **9/9** machine-checked fields. The test outcomes shown above are **selected pipelines**, not scores for every feature family: NT-v2 was *not* submitted to the held-out promoter or enhancer test sets.
 
 ## Structure
 
