@@ -1,5 +1,7 @@
 # Genomic-LM tool availability: Pi agent pilot
 
+**New:** [v2/](v2/README.md) expands to three biological sequence tasks, stronger GC/3-mer and GC/5-mer controls, one blind test submission per agent, an audited sequence-similarity screen, and a Seaborn comparison plot. The original one-task study below is retained unchanged as v1.
+
 A reproducible first iteration of a **genomic language model as a tool for a Pi agent**. On a small public promoter-classification subset, five `openai/gpt-6-sol` (medium) runs had only a GC/3-mer baseline tool; five matched runs also had a tool backed by frozen **Nucleotide Transformer v2 50M** embeddings. Each run has **one user prompt**, an independent persistent Pi session, and a streamed JSON event trace.
 
 **Result on this single fixed subset:** the GLM-tool arm selected the embedding features in all five runs. Test AUROC was **0.916016 versus 0.886719** for the composition baseline (+0.029297); accuracy at a 0.5 threshold was **0.812500 versus 0.859375** (−0.046875). Both arms answered all seven machine-graded fields correctly in all five repetitions. This is a mixed result, **not evidence of general uplift across biology**. Five agent repetitions are not five independent biological evaluations. See [methodology and limitations](docs/methodology.md).

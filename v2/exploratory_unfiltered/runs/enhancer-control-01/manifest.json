@@ -1,0 +1,29 @@
+{
+  "run_id": "enhancer-control-01",
+  "task": "enhancer",
+  "arm": "control",
+  "trial": 1,
+  "paired_run_id": "enhancer-glm-01",
+  "parent_run_id": null,
+  "agent_model": "openai/gpt-6-sol",
+  "thinking": "medium",
+  "dataset_revision": "49ef8d0d80087ece7441096afcef0123b0781ce0",
+  "genomic_model_revision": null,
+  "started_at": "2026-10-17T20:31:23.874858+00:00",
+  "duration_seconds": 14.624,
+  "status": "finished",
+  "exit_code": 0,
+  "agent_settled": true,
+  "session_id": "enhancer-control-01",
+  "session_files": [
+    "runs/enhancer-control-01/sessions/2026-10-17T20-31-24-165Z_enhancer-control-01.jsonl"
+  ],
+  "event_file": "runs/enhancer-control-01/events.jsonl",
+  "tool_sequence": [
+    "describe_task",
+    "validate_feature",
+    "validate_feature",
+    "submit_pipeline"
+  ],
+  "extension_errors": []
+}

@@ -1,0 +1,113 @@
+{
+  "seed": 20261017,
+  "per_class": {
+    "train": 128,
+    "test": 64
+  },
+  "test_similarity_screen": {
+    "k": 7,
+    "max_jaccard_exclusive": 0.8,
+    "includes_reverse_complement": true
+  },
+  "datasets": {
+    "promoter": {
+      "repository": "katarinagresova/Genomic_Benchmarks_human_nontata_promoters",
+      "revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+      "files": {
+        "train": {
+          "path": "data/source/promoter/train-00000-of-00001-aeb55728756a44ae.parquet",
+          "sha256": "75e934078d6b880464c6a60f2e5ffd5b894204a11f32aac8c9607adcae625afa",
+          "source_rows": 27097
+        },
+        "test": {
+          "path": "data/source/promoter/test-00000-of-00001-d7614d9116c62f44.parquet",
+          "sha256": "baac2b635666547c56c6482d6c7dd53def995cdcc4acca367f980c82d15c9f39",
+          "source_rows": 9034
+        }
+      },
+      "subsets": {
+        "train": {
+          "path": "data/promoter_train.csv",
+          "sha256": "6e5e0401714fe428691576a57c661bdb1a9a246fdd8c2aec854ee72c22a60ab7",
+          "rows": 256,
+          "length_min": 251,
+          "length_max": 251
+        },
+        "test": {
+          "path": "data/promoter_test.csv",
+          "sha256": "da991a6d83236403e896853980081abacc107c3d118c131a8e8e9a68922faf93",
+          "rows": 128,
+          "length_min": 251,
+          "length_max": 251
+        }
+      },
+      "exact_or_reverse_complement_overlap": 0
+    },
+    "enhancer": {
+      "repository": "katarinagresova/Genomic_Benchmarks_human_enhancers_cohn",
+      "revision": "49ef8d0d80087ece7441096afcef0123b0781ce0",
+      "files": {
+        "train": {
+          "path": "data/source/enhancer/train-00000-of-00001-308a8a054210be5f.parquet",
+          "sha256": "cb77822867ab7a607c84e2d0ffa04c71b5b3f9667035b8547ef7a548fe75df36",
+          "source_rows": 20843
+        },
+        "test": {
+          "path": "data/source/enhancer/test-00000-of-00001-b9d4d53093c06044.parquet",
+          "sha256": "0f1c92ae2047c4352b03374ab1945059f81b0c26c2c7e5888fda3e4dae90d002",
+          "source_rows": 6948
+        }
+      },
+      "subsets": {
+        "train": {
+          "path": "data/enhancer_train.csv",
+          "sha256": "735d799f113d1d06bcdc68f2f5a98cb1729f686670786580bd7f0fb106c80cf8",
+          "rows": 256,
+          "length_min": 500,
+          "length_max": 500
+        },
+        "test": {
+          "path": "data/enhancer_test.csv",
+          "sha256": "5bb5dcb5cda2608f0660e27204bc1a6c51b79a0c0688db47da9bf530807c12d2",
+          "rows": 128,
+          "length_min": 500,
+          "length_max": 500
+        }
+      },
+      "exact_or_reverse_complement_overlap": 0
+    },
+    "open_chromatin": {
+      "repository": "katarinagresova/Genomic_Benchmarks_human_ocr_ensembl",
+      "revision": "3c07e4be6425be11073baa2daacf6c143c64e4ff",
+      "files": {
+        "train": {
+          "path": "data/source/open_chromatin/train-00000-of-00001-3ce5711c171d3e15.parquet",
+          "sha256": "27aa4fdeab853a5a514aa7f8fd963eb602abf58a54c2bbf076e58bb60475bed6",
+          "source_rows": 139804
+        },
+        "test": {
+          "path": "data/source/open_chromatin/test-00000-of-00001-dcaf3e2a1561c12e.parquet",
+          "sha256": "7eebddf1e5a2390e82f4f1354b972adbc3ae40e35e2394cb7f95d2052640f0b9",
+          "source_rows": 34952
+        }
+      },
+      "subsets": {
+        "train": {
+          "path": "data/open_chromatin_train.csv",
+          "sha256": "deba6b4d5808f243f664df820ce032a5ce6357713dc4fd633441bbebe8fe1289",
+          "rows": 256,
+          "length_min": 113,
+          "length_max": 581
+        },
+        "test": {
+          "path": "data/open_chromatin_test.csv",
+          "sha256": "defde6eb1eda94cb69eacf60bcde63e2d3c79fc1e373ba5192b4656b25fa0a9b",
+          "rows": 128,
+          "length_min": 117,
+          "length_max": 572
+        }
+      },
+      "exact_or_reverse_complement_overlap": 0
+    }
+  }
+}

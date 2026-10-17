@@ -1,0 +1,533 @@
+[
+  {
+    "run_id": "enhancer-control-01",
+    "task": "enhancer",
+    "arm": "control",
+    "trial": 1,
+    "paired_run_id": "enhancer-glm-01",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "49ef8d0d80087ece7441096afcef0123b0781ce0",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:31:23.874858+00:00",
+    "duration_seconds": 14.624,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "enhancer-control-01",
+    "session_files": [
+      "runs/enhancer-control-01/sessions/2026-10-17T20-31-24-165Z_enhancer-control-01.jsonl"
+    ],
+    "event_file": "runs/enhancer-control-01/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "enhancer-control-02",
+    "task": "enhancer",
+    "arm": "control",
+    "trial": 2,
+    "paired_run_id": "enhancer-glm-02",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "49ef8d0d80087ece7441096afcef0123b0781ce0",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:32:58.548723+00:00",
+    "duration_seconds": 15.082,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "enhancer-control-02",
+    "session_files": [
+      "runs/enhancer-control-02/sessions/2026-10-17T20-32-58-828Z_enhancer-control-02.jsonl"
+    ],
+    "event_file": "runs/enhancer-control-02/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "enhancer-control-03",
+    "task": "enhancer",
+    "arm": "control",
+    "trial": 3,
+    "paired_run_id": "enhancer-glm-03",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "49ef8d0d80087ece7441096afcef0123b0781ce0",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:33:13.630160+00:00",
+    "duration_seconds": 14.633,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "enhancer-control-03",
+    "session_files": [
+      "runs/enhancer-control-03/sessions/2026-10-17T20-33-13-900Z_enhancer-control-03.jsonl"
+    ],
+    "event_file": "runs/enhancer-control-03/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "enhancer-glm-01",
+    "task": "enhancer",
+    "arm": "glm",
+    "trial": 1,
+    "paired_run_id": "enhancer-control-01",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "49ef8d0d80087ece7441096afcef0123b0781ce0",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:31:23.980133+00:00",
+    "duration_seconds": 17.611,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "enhancer-glm-01",
+    "session_files": [
+      "runs/enhancer-glm-01/sessions/2026-10-17T20-31-24-268Z_enhancer-glm-01.jsonl"
+    ],
+    "event_file": "runs/enhancer-glm-01/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "enhancer-glm-02",
+    "task": "enhancer",
+    "arm": "glm",
+    "trial": 2,
+    "paired_run_id": "enhancer-control-02",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "49ef8d0d80087ece7441096afcef0123b0781ce0",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:33:00.985340+00:00",
+    "duration_seconds": 15.423,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "enhancer-glm-02",
+    "session_files": [
+      "runs/enhancer-glm-02/sessions/2026-10-17T20-33-01-256Z_enhancer-glm-02.jsonl"
+    ],
+    "event_file": "runs/enhancer-glm-02/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "enhancer-glm-03",
+    "task": "enhancer",
+    "arm": "glm",
+    "trial": 3,
+    "paired_run_id": "enhancer-control-03",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "49ef8d0d80087ece7441096afcef0123b0781ce0",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:33:16.406526+00:00",
+    "duration_seconds": 16.054,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "enhancer-glm-03",
+    "session_files": [
+      "runs/enhancer-glm-03/sessions/2026-10-17T20-33-16-682Z_enhancer-glm-03.jsonl"
+    ],
+    "event_file": "runs/enhancer-glm-03/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "open_chromatin-control-01",
+    "task": "open_chromatin",
+    "arm": "control",
+    "trial": 1,
+    "paired_run_id": "open_chromatin-glm-01",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "3c07e4be6425be11073baa2daacf6c143c64e4ff",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:31:38.501299+00:00",
+    "duration_seconds": 14.198,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "open_chromatin-control-01",
+    "session_files": [
+      "runs/open_chromatin-control-01/sessions/2026-10-17T20-31-38-777Z_open_chromatin-control-01.jsonl"
+    ],
+    "event_file": "runs/open_chromatin-control-01/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "open_chromatin-control-02",
+    "task": "open_chromatin",
+    "arm": "control",
+    "trial": 2,
+    "paired_run_id": "open_chromatin-glm-02",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "3c07e4be6425be11073baa2daacf6c143c64e4ff",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:33:28.262629+00:00",
+    "duration_seconds": 14.421,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "open_chromatin-control-02",
+    "session_files": [
+      "runs/open_chromatin-control-02/sessions/2026-10-17T20-33-28-645Z_open_chromatin-control-02.jsonl"
+    ],
+    "event_file": "runs/open_chromatin-control-02/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "open_chromatin-control-03",
+    "task": "open_chromatin",
+    "arm": "control",
+    "trial": 3,
+    "paired_run_id": "open_chromatin-glm-03",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "3c07e4be6425be11073baa2daacf6c143c64e4ff",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:33:42.684675+00:00",
+    "duration_seconds": 12.997,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "open_chromatin-control-03",
+    "session_files": [
+      "runs/open_chromatin-control-03/sessions/2026-10-17T20-33-42-958Z_open_chromatin-control-03.jsonl"
+    ],
+    "event_file": "runs/open_chromatin-control-03/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "open_chromatin-glm-01",
+    "task": "open_chromatin",
+    "arm": "glm",
+    "trial": 1,
+    "paired_run_id": "open_chromatin-control-01",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "3c07e4be6425be11073baa2daacf6c143c64e4ff",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:31:41.593284+00:00",
+    "duration_seconds": 24.985,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "open_chromatin-glm-01",
+    "session_files": [
+      "runs/open_chromatin-glm-01/sessions/2026-10-17T20-31-41-858Z_open_chromatin-glm-01.jsonl"
+    ],
+    "event_file": "runs/open_chromatin-glm-01/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "open_chromatin-glm-02",
+    "task": "open_chromatin",
+    "arm": "glm",
+    "trial": 2,
+    "paired_run_id": "open_chromatin-control-02",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "3c07e4be6425be11073baa2daacf6c143c64e4ff",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:33:32.460408+00:00",
+    "duration_seconds": 16.915,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "open_chromatin-glm-02",
+    "session_files": [
+      "runs/open_chromatin-glm-02/sessions/2026-10-17T20-33-32-729Z_open_chromatin-glm-02.jsonl"
+    ],
+    "event_file": "runs/open_chromatin-glm-02/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "open_chromatin-glm-03",
+    "task": "open_chromatin",
+    "arm": "glm",
+    "trial": 3,
+    "paired_run_id": "open_chromatin-control-03",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "3c07e4be6425be11073baa2daacf6c143c64e4ff",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:33:49.376738+00:00",
+    "duration_seconds": 14.322,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "open_chromatin-glm-03",
+    "session_files": [
+      "runs/open_chromatin-glm-03/sessions/2026-10-17T20-33-49-642Z_open_chromatin-glm-03.jsonl"
+    ],
+    "event_file": "runs/open_chromatin-glm-03/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "promoter-control-01",
+    "task": "promoter",
+    "arm": "control",
+    "trial": 1,
+    "paired_run_id": "promoter-glm-01",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:31:08.208584+00:00",
+    "duration_seconds": 15.663,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "promoter-control-01",
+    "session_files": [
+      "runs/promoter-control-01/sessions/2026-10-17T20-31-08-680Z_promoter-control-01.jsonl"
+    ],
+    "event_file": "runs/promoter-control-01/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "promoter-control-02",
+    "task": "promoter",
+    "arm": "control",
+    "trial": 2,
+    "paired_run_id": "promoter-glm-02",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:32:26.634717+00:00",
+    "duration_seconds": 17.185,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "promoter-control-02",
+    "session_files": [
+      "runs/promoter-control-02/sessions/2026-10-17T20-32-26-966Z_promoter-control-02.jsonl"
+    ],
+    "event_file": "runs/promoter-control-02/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "promoter-control-03",
+    "task": "promoter",
+    "arm": "control",
+    "trial": 3,
+    "paired_run_id": "promoter-glm-03",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:32:43.822151+00:00",
+    "duration_seconds": 17.161,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "promoter-control-03",
+    "session_files": [
+      "runs/promoter-control-03/sessions/2026-10-17T20-32-44-123Z_promoter-control-03.jsonl"
+    ],
+    "event_file": "runs/promoter-control-03/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "promoter-glm-01",
+    "task": "promoter",
+    "arm": "glm",
+    "trial": 1,
+    "paired_run_id": "promoter-control-01",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:31:08.208915+00:00",
+    "duration_seconds": 15.771,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "promoter-glm-01",
+    "session_files": [
+      "runs/promoter-glm-01/sessions/2026-10-17T20-31-08-660Z_promoter-glm-01.jsonl"
+    ],
+    "event_file": "runs/promoter-glm-01/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "promoter-glm-02",
+    "task": "promoter",
+    "arm": "glm",
+    "trial": 2,
+    "paired_run_id": "promoter-control-02",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:32:26.635152+00:00",
+    "duration_seconds": 17.213,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "promoter-glm-02",
+    "session_files": [
+      "runs/promoter-glm-02/sessions/2026-10-17T20-32-26-946Z_promoter-glm-02.jsonl"
+    ],
+    "event_file": "runs/promoter-glm-02/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "promoter-glm-03",
+    "task": "promoter",
+    "arm": "glm",
+    "trial": 3,
+    "paired_run_id": "promoter-control-03",
+    "parent_run_id": null,
+    "agent_model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:32:43.848879+00:00",
+    "duration_seconds": 14.698,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "promoter-glm-03",
+    "session_files": [
+      "runs/promoter-glm-03/sessions/2026-10-17T20-32-44-143Z_promoter-glm-03.jsonl"
+    ],
+    "event_file": "runs/promoter-glm-03/events.jsonl",
+    "tool_sequence": [
+      "describe_task",
+      "validate_feature",
+      "validate_feature",
+      "validate_feature",
+      "submit_pipeline"
+    ],
+    "extension_errors": []
+  }
+]

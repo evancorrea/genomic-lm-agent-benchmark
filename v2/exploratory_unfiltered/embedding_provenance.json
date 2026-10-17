@@ -1,0 +1,47 @@
+{
+  "model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+  "dataset_revisions": {
+    "promoter": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "enhancer": "49ef8d0d80087ece7441096afcef0123b0781ce0",
+    "open_chromatin": "3c07e4be6425be11073baa2daacf6c143c64e4ff"
+  },
+  "pooling": "attention-mask-weighted last-hidden mean, special tokens included",
+  "device": "mps",
+  "batch_size": 8,
+  "torch": "2.0.1",
+  "inference_seconds_excluding_model_load": 49.4,
+  "shapes": {
+    "promoter_train": [
+      256,
+      512
+    ],
+    "promoter_test": [
+      128,
+      512
+    ],
+    "enhancer_train": [
+      256,
+      512
+    ],
+    "enhancer_test": [
+      128,
+      512
+    ],
+    "open_chromatin_train": [
+      256,
+      512
+    ],
+    "open_chromatin_test": [
+      128,
+      512
+    ]
+  },
+  "sha256": {
+    "enhancer_train": "fbd750613526953a0dffc5bf7da0394f6ce9c6d9a1cd1160d4a56ace04571322",
+    "promoter_train": "38ee87ff670818ee29fc80b3cbaa9eecafdbd0efe569760a5050480b0a9f41b0",
+    "open_chromatin_test": "bfcd589ca696b361aedd2b2dace5a6fefb2fde057b4b07d0df2058a02cb70a95",
+    "promoter_test": "b49702165fdad5c4e2906f988ef41c30cb0d43ddbabde85de11be78cdf80f5bf",
+    "open_chromatin_train": "71bfce0937fbd91a87180ec9f8e9cab4518303ac97a1ae8c5d516ed71ca473ac",
+    "enhancer_test": "d3bdd2cd5603b958099a152da07f7f424a1472e3122e6075be1d23535b877f95"
+  }
+}

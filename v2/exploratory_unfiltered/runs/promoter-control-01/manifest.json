@@ -1,0 +1,29 @@
+{
+  "run_id": "promoter-control-01",
+  "task": "promoter",
+  "arm": "control",
+  "trial": 1,
+  "paired_run_id": "promoter-glm-01",
+  "parent_run_id": null,
+  "agent_model": "openai/gpt-6-sol",
+  "thinking": "medium",
+  "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+  "genomic_model_revision": null,
+  "started_at": "2026-10-17T20:31:08.208584+00:00",
+  "duration_seconds": 15.663,
+  "status": "finished",
+  "exit_code": 0,
+  "agent_settled": true,
+  "session_id": "promoter-control-01",
+  "session_files": [
+    "runs/promoter-control-01/sessions/2026-10-17T20-31-08-680Z_promoter-control-01.jsonl"
+  ],
+  "event_file": "runs/promoter-control-01/events.jsonl",
+  "tool_sequence": [
+    "describe_task",
+    "validate_feature",
+    "validate_feature",
+    "submit_pipeline"
+  ],
+  "extension_errors": []
+}

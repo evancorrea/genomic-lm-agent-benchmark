@@ -1,0 +1,25 @@
+{
+  "k": 7,
+  "method": "maximum Jaccard of 7-mer sets per test sequence against sampled train sequences; also reverse complements",
+  "warning": "This is only a heuristic screen, not a coordinate-aware or homology-aware split.",
+  "tasks": {
+    "promoter": {
+      "maximum": 0.7906976744186046,
+      "mean_nearest": 0.07573378398498533,
+      "test_rows_nearest_at_least_0.8": 0,
+      "test_rows_nearest_at_least_0.9": 0
+    },
+    "enhancer": {
+      "maximum": 0.17935483870967742,
+      "mean_nearest": 0.06454482523705905,
+      "test_rows_nearest_at_least_0.8": 0,
+      "test_rows_nearest_at_least_0.9": 0
+    },
+    "open_chromatin": {
+      "maximum": 0.21413721413721415,
+      "mean_nearest": 0.061279785053455056,
+      "test_rows_nearest_at_least_0.8": 0,
+      "test_rows_nearest_at_least_0.9": 0
+    }
+  }
+}

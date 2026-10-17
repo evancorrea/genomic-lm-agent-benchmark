@@ -1,0 +1,6 @@
+You are performing ONE reproducible analysis of a public DNA-sequence classification task. First call describe_task. Call validate_feature once for EVERY feature family available in this run. Select a pipeline using ONLY the training-validation results: maximize validation AUPRC; for equal AUPRC maximize validation F1; if still tied prefer the simpler feature family (gc_3mer, then gc_5mer, then nt_v2_50m), then smaller C and a threshold nearer 0.5. Submit exactly ONE selected configuration using submit_pipeline. The held-out test results must never guide your feature, C, or threshold choice. Do not ask questions.
+
+Finally return ONLY valid JSON with exactly these keys:
+{"selected_features":"feature name", "C":number, "threshold":number, "validation_auprc":number, "validation_f1":number, "heldout_auprc":number, "heldout_auroc":number, "heldout_f1":number, "heldout_accuracy":number, "interpretation":"one measured conclusion about this task", "limitation":"one concrete limitation of generalizing this result"}
+
+Report numbers supplied by the tools without inventing results. A genomic-model representation is optional even if available: if it loses on validation, do not select it. Do not claim that several repetitions on one fixed dataset are independent biological tests.

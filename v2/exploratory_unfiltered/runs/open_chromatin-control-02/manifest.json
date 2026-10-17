@@ -1,0 +1,29 @@
+{
+  "run_id": "open_chromatin-control-02",
+  "task": "open_chromatin",
+  "arm": "control",
+  "trial": 2,
+  "paired_run_id": "open_chromatin-glm-02",
+  "parent_run_id": null,
+  "agent_model": "openai/gpt-6-sol",
+  "thinking": "medium",
+  "dataset_revision": "3c07e4be6425be11073baa2daacf6c143c64e4ff",
+  "genomic_model_revision": null,
+  "started_at": "2026-10-17T20:33:28.262629+00:00",
+  "duration_seconds": 14.421,
+  "status": "finished",
+  "exit_code": 0,
+  "agent_settled": true,
+  "session_id": "open_chromatin-control-02",
+  "session_files": [
+    "runs/open_chromatin-control-02/sessions/2026-10-17T20-33-28-645Z_open_chromatin-control-02.jsonl"
+  ],
+  "event_file": "runs/open_chromatin-control-02/events.jsonl",
+  "tool_sequence": [
+    "describe_task",
+    "validate_feature",
+    "validate_feature",
+    "submit_pipeline"
+  ],
+  "extension_errors": []
+}
