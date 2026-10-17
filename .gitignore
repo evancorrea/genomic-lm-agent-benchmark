@@ -1,0 +1,13 @@
+# Downloaded weights, derived embeddings and evaluation cache (regenerate via scripts)
+.cache/
+.venv/
+.venv-clean/
+__pycache__/
+*.pyc
+.DS_Store
+*.part
+
+# Dataset card does not specify redistribution terms: regenerate local data instead
+/data/source/
+/data/train.csv
+/data/test.csv

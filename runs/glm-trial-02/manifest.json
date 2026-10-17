@@ -1,0 +1,34 @@
+{
+  "run_id": "glm-trial-02",
+  "task_id": "public-promoter-nt50m-v1",
+  "arm": "glm",
+  "trial": 2,
+  "parent_run_id": null,
+  "paired_run_id": "control-trial-02",
+  "model": "openai/gpt-6-sol",
+  "thinking": "medium",
+  "tools": [
+    "describe_dataset",
+    "evaluate_gc_3mer",
+    "evaluate_nt_embeddings"
+  ],
+  "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+  "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+  "started_at": "2026-10-17T20:03:24.248173+00:00",
+  "duration_seconds": 7.704,
+  "status": "finished",
+  "exit_code": 0,
+  "agent_settled": true,
+  "session_id": "glm-trial-02",
+  "session_files": [
+    "runs/glm-trial-02/sessions/2026-10-17T20-03-24-630Z_glm-trial-02.jsonl"
+  ],
+  "event_file": "runs/glm-trial-02/events.jsonl",
+  "event_count": 152,
+  "tool_sequence": [
+    "describe_dataset",
+    "evaluate_gc_3mer",
+    "evaluate_nt_embeddings"
+  ],
+  "extension_errors": []
+}

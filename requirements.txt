@@ -1,0 +1,13 @@
+# Tested with Python 3.11 on Apple Silicon. Install in an isolated virtual environment.
+torch==2.0.1
+transformers==4.29.2
+huggingface-hub==0.15.1
+tokenizers==0.13.2
+safetensors==0.4.5
+numpy==1.26.4
+pandas==2.2.3
+pyarrow==11.0.0
+scikit-learn==1.6.1
+scipy==1.13.1
+matplotlib==3.10.0
+requests==2.32.3

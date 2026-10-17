@@ -1,0 +1,20 @@
+{
+  "model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+  "data_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+  "pooling": "attention-mask-weighted mean of last hidden layer, including special tokens",
+  "device": "mps",
+  "batch_size": 8,
+  "torch": "2.0.1",
+  "elapsed_seconds": 7.35,
+  "shape": {
+    "train": [
+      128,
+      512
+    ],
+    "test": [
+      64,
+      512
+    ]
+  },
+  "sha256": "5e13032a7beab89d07a6f5b7a55cd90eaa6ff77bae95576cc1f18a09d4231568"
+}

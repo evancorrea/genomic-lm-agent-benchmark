@@ -1,0 +1,33 @@
+{
+  "dataset": "katarinagresova/Genomic_Benchmarks_human_nontata_promoters",
+  "revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+  "seed": 20261017,
+  "per_class": {
+    "train": 64,
+    "test": 32
+  },
+  "source_files": {
+    "train": {
+      "path": "data/source/train-00000-of-00001-aeb55728756a44ae.parquet",
+      "sha256": "75e934078d6b880464c6a60f2e5ffd5b894204a11f32aac8c9607adcae625afa",
+      "rows": 27097,
+      "selected_rows": 128,
+      "sequence_lengths": [
+        251
+      ]
+    },
+    "test": {
+      "path": "data/source/test-00000-of-00001-d7614d9116c62f44.parquet",
+      "sha256": "baac2b635666547c56c6482d6c7dd53def995cdcc4acca367f980c82d15c9f39",
+      "rows": 9034,
+      "selected_rows": 64,
+      "sequence_lengths": [
+        251
+      ]
+    }
+  },
+  "subset_sha256": {
+    "train": "9e0e92cc5d0ef65993ea927f6080bbe29e3ee2779d696abcd56a8028a9ee5a15",
+    "test": "72733c8773a6d90f97808557243756c23c262a5840191288515710434f3065e3"
+  }
+}

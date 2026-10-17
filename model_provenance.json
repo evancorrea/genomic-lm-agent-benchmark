@@ -1,0 +1,34 @@
+{
+  "model": "InstaDeepAI/nucleotide-transformer-v2-50m-multi-species",
+  "revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+  "files": {
+    "config.json": {
+      "bytes": 1064,
+      "sha256": "e20f497248c7cb264c7cd4582dbcfd52dc4cbf74a97fc711559b8c8f71c635db"
+    },
+    "esm_config.py": {
+      "bytes": 14876,
+      "sha256": "a44e859baa08465ecdcd76b0a73f6e4fe011245a212931c403de1149ae9613ec"
+    },
+    "modeling_esm.py": {
+      "bytes": 58205,
+      "sha256": "f2b003f45d2fa4f94e92d8bbef927b719dfdd7ab7c7a95743daa2b10ab140cb3"
+    },
+    "model.safetensors": {
+      "bytes": 223642688,
+      "sha256": "17e75af297556ea56828716d8aa539e8f12b8b625547204b74171ab91aa33569"
+    },
+    "special_tokens_map.json": {
+      "bytes": 101,
+      "sha256": "d6dc30bf018166daab248b0abf7efda6fd1b1e0a2d1bee5b31b23db2ebdaee77"
+    },
+    "tokenizer_config.json": {
+      "bytes": 129,
+      "sha256": "253d338919eba938e50b776f3243cc739462c207fe64e3d2e81cc5e681bee45b"
+    },
+    "vocab.txt": {
+      "bytes": 28718,
+      "sha256": "c00e0ad166d6ab3f7540ebc92270392e581bb3106763412f29034b49323e1052"
+    }
+  }
+}

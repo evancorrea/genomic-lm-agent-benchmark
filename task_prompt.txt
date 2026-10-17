@@ -1,0 +1,6 @@
+You are preparing a brief, reproducible pilot analysis of a public human promoter-sequence classification dataset. This is a single-prompt task. Use the available tools to inspect the dataset and evaluate every feature representation available to you. Select the representation with the highest TRAINING-ONLY validation AUROC; if tied, use validation accuracy, then prefer the simpler composition baseline. The held-out test set must not guide feature selection.
+
+Return ONLY one valid JSON object with exactly these keys:
+{"selected_features":"gc_3mer or nt_v2_50m", "baseline_test_auc":number, "selected_test_auc":number, "delta_test_auc":number, "baseline_test_accuracy":number, "selected_test_accuracy":number, "delta_test_accuracy":number, "interpretation":"one sentence comparing discrimination and thresholded accuracy, without overstating the result", "limitation":"one concrete limitation of this small pilot"}
+
+Deltas are selected minus baseline. Report the metrics shown by the tools; do not invent data, tools, or model scores. If no genomic feature tool is available, the baseline is the only selectable representation and both deltas are zero. You cannot run code or access the model except through registered tools; do not request further permissions.

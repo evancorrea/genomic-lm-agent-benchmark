@@ -1,0 +1,332 @@
+[
+  {
+    "run_id": "control-trial-01",
+    "task_id": "public-promoter-nt50m-v1",
+    "arm": "control",
+    "trial": 1,
+    "parent_run_id": null,
+    "paired_run_id": "glm-trial-01",
+    "model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "tools": [
+      "describe_dataset",
+      "evaluate_gc_3mer"
+    ],
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:02:54.558912+00:00",
+    "duration_seconds": 9.946,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "control-trial-01",
+    "session_files": [
+      "runs/control-trial-01/sessions/2026-10-17T20-02-55-046Z_control-trial-01.jsonl"
+    ],
+    "event_file": "runs/control-trial-01/events.jsonl",
+    "event_count": 148,
+    "tool_sequence": [
+      "describe_dataset",
+      "evaluate_gc_3mer"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "control-trial-02",
+    "task_id": "public-promoter-nt50m-v1",
+    "arm": "control",
+    "trial": 2,
+    "parent_run_id": null,
+    "paired_run_id": "glm-trial-02",
+    "model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "tools": [
+      "describe_dataset",
+      "evaluate_gc_3mer"
+    ],
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:03:24.247877+00:00",
+    "duration_seconds": 9.447,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "control-trial-02",
+    "session_files": [
+      "runs/control-trial-02/sessions/2026-10-17T20-03-24-612Z_control-trial-02.jsonl"
+    ],
+    "event_file": "runs/control-trial-02/events.jsonl",
+    "event_count": 148,
+    "tool_sequence": [
+      "describe_dataset",
+      "evaluate_gc_3mer"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "control-trial-03",
+    "task_id": "public-promoter-nt50m-v1",
+    "arm": "control",
+    "trial": 3,
+    "parent_run_id": null,
+    "paired_run_id": "glm-trial-03",
+    "model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "tools": [
+      "describe_dataset",
+      "evaluate_gc_3mer"
+    ],
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:03:31.953382+00:00",
+    "duration_seconds": 7.45,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "control-trial-03",
+    "session_files": [
+      "runs/control-trial-03/sessions/2026-10-17T20-03-32-226Z_control-trial-03.jsonl"
+    ],
+    "event_file": "runs/control-trial-03/events.jsonl",
+    "event_count": 137,
+    "tool_sequence": [
+      "describe_dataset",
+      "evaluate_gc_3mer"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "control-trial-04",
+    "task_id": "public-promoter-nt50m-v1",
+    "arm": "control",
+    "trial": 4,
+    "parent_run_id": null,
+    "paired_run_id": "glm-trial-04",
+    "model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "tools": [
+      "describe_dataset",
+      "evaluate_gc_3mer"
+    ],
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:03:39.404074+00:00",
+    "duration_seconds": 8.427,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "control-trial-04",
+    "session_files": [
+      "runs/control-trial-04/sessions/2026-10-17T20-03-39-680Z_control-trial-04.jsonl"
+    ],
+    "event_file": "runs/control-trial-04/events.jsonl",
+    "event_count": 141,
+    "tool_sequence": [
+      "describe_dataset",
+      "evaluate_gc_3mer"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "control-trial-05",
+    "task_id": "public-promoter-nt50m-v1",
+    "arm": "control",
+    "trial": 5,
+    "parent_run_id": null,
+    "paired_run_id": "glm-trial-05",
+    "model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "tools": [
+      "describe_dataset",
+      "evaluate_gc_3mer"
+    ],
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": null,
+    "started_at": "2026-10-17T20:03:47.831476+00:00",
+    "duration_seconds": 7.56,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "control-trial-05",
+    "session_files": [
+      "runs/control-trial-05/sessions/2026-10-17T20-03-48-103Z_control-trial-05.jsonl"
+    ],
+    "event_file": "runs/control-trial-05/events.jsonl",
+    "event_count": 134,
+    "tool_sequence": [
+      "describe_dataset",
+      "evaluate_gc_3mer"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "glm-trial-01",
+    "task_id": "public-promoter-nt50m-v1",
+    "arm": "glm",
+    "trial": 1,
+    "parent_run_id": null,
+    "paired_run_id": "control-trial-01",
+    "model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "tools": [
+      "describe_dataset",
+      "evaluate_gc_3mer",
+      "evaluate_nt_embeddings"
+    ],
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:02:54.559513+00:00",
+    "duration_seconds": 7.973,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "glm-trial-01",
+    "session_files": [
+      "runs/glm-trial-01/sessions/2026-10-17T20-02-55-065Z_glm-trial-01.jsonl"
+    ],
+    "event_file": "runs/glm-trial-01/events.jsonl",
+    "event_count": 158,
+    "tool_sequence": [
+      "describe_dataset",
+      "evaluate_gc_3mer",
+      "evaluate_nt_embeddings"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "glm-trial-02",
+    "task_id": "public-promoter-nt50m-v1",
+    "arm": "glm",
+    "trial": 2,
+    "parent_run_id": null,
+    "paired_run_id": "control-trial-02",
+    "model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "tools": [
+      "describe_dataset",
+      "evaluate_gc_3mer",
+      "evaluate_nt_embeddings"
+    ],
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:03:24.248173+00:00",
+    "duration_seconds": 7.704,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "glm-trial-02",
+    "session_files": [
+      "runs/glm-trial-02/sessions/2026-10-17T20-03-24-630Z_glm-trial-02.jsonl"
+    ],
+    "event_file": "runs/glm-trial-02/events.jsonl",
+    "event_count": 152,
+    "tool_sequence": [
+      "describe_dataset",
+      "evaluate_gc_3mer",
+      "evaluate_nt_embeddings"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "glm-trial-03",
+    "task_id": "public-promoter-nt50m-v1",
+    "arm": "glm",
+    "trial": 3,
+    "parent_run_id": null,
+    "paired_run_id": "control-trial-03",
+    "model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "tools": [
+      "describe_dataset",
+      "evaluate_gc_3mer",
+      "evaluate_nt_embeddings"
+    ],
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:03:33.696063+00:00",
+    "duration_seconds": 7.672,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "glm-trial-03",
+    "session_files": [
+      "runs/glm-trial-03/sessions/2026-10-17T20-03-33-973Z_glm-trial-03.jsonl"
+    ],
+    "event_file": "runs/glm-trial-03/events.jsonl",
+    "event_count": 156,
+    "tool_sequence": [
+      "describe_dataset",
+      "evaluate_gc_3mer",
+      "evaluate_nt_embeddings"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "glm-trial-04",
+    "task_id": "public-promoter-nt50m-v1",
+    "arm": "glm",
+    "trial": 4,
+    "parent_run_id": null,
+    "paired_run_id": "control-trial-04",
+    "model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "tools": [
+      "describe_dataset",
+      "evaluate_gc_3mer",
+      "evaluate_nt_embeddings"
+    ],
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:03:41.368721+00:00",
+    "duration_seconds": 8.496,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "glm-trial-04",
+    "session_files": [
+      "runs/glm-trial-04/sessions/2026-10-17T20-03-41-632Z_glm-trial-04.jsonl"
+    ],
+    "event_file": "runs/glm-trial-04/events.jsonl",
+    "event_count": 150,
+    "tool_sequence": [
+      "describe_dataset",
+      "evaluate_gc_3mer",
+      "evaluate_nt_embeddings"
+    ],
+    "extension_errors": []
+  },
+  {
+    "run_id": "glm-trial-05",
+    "task_id": "public-promoter-nt50m-v1",
+    "arm": "glm",
+    "trial": 5,
+    "parent_run_id": null,
+    "paired_run_id": "control-trial-05",
+    "model": "openai/gpt-6-sol",
+    "thinking": "medium",
+    "tools": [
+      "describe_dataset",
+      "evaluate_gc_3mer",
+      "evaluate_nt_embeddings"
+    ],
+    "dataset_revision": "e0003669df0a180c8570ebe091ed91f20fa080ec",
+    "genomic_model_revision": "81b29e5786726d891dbf929404ef20adca5b36f1",
+    "started_at": "2026-10-17T20:03:49.865326+00:00",
+    "duration_seconds": 9.322,
+    "status": "finished",
+    "exit_code": 0,
+    "agent_settled": true,
+    "session_id": "glm-trial-05",
+    "session_files": [
+      "runs/glm-trial-05/sessions/2026-10-17T20-03-50-128Z_glm-trial-05.jsonl"
+    ],
+    "event_file": "runs/glm-trial-05/events.jsonl",
+    "event_count": 155,
+    "tool_sequence": [
+      "describe_dataset",
+      "evaluate_gc_3mer",
+      "evaluate_nt_embeddings"
+    ],
+    "extension_errors": []
+  }
+]
